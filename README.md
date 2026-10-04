@@ -2,7 +2,7 @@
 
 Personal portfolio website of **Lingayath Govardhan Goud**, a 4th-year B.Tech Computer Science student.
 
-🔗 **Live site:** https://govardhan-portfolio.vercel.app
+🔗 **Live site:** https://govardhan-portfolio-nine.vercel.app/
 
 ## Features
 - Home, About, Projects and Contact pages
