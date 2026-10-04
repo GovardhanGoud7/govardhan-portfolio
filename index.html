@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Govardhan Goud | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--text:#fff;--muted:#cfcfcf;--accent:#ffc107;--red:#c1121f;--panel:#141414;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px) ;scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Arial,sans-serif;line-height:1.6;overflow-x:hidden;position:relative}
+body::before,body::after{content:"";position:fixed;width:140px;height:14px;background:var(--red);transform:rotate(-40deg);filter:blur(1px);z-index:0;opacity:.85}
+body::before{left:-40px;top:190px}
+body::after{right:-30px;bottom:50px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px;background:linear-gradient(90deg,#2b2b2b,#6a2a2a);flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.5rem;border-bottom:3px solid var(--accent);padding-bottom:2px}
+nav{display:flex;gap:18px;font-weight:600}
+nav a{color:#e6e6e6;text-decoration:none}
+nav a:hover,nav a:focus-visible{color:var(--accent);outline:none}
+main{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+.hero h1{font-size:clamp(2rem,8vw,3.2rem);line-height:1.15;margin:0 0 14px;font-weight:600}
+.role{color:var(--accent);font-size:1.35rem;font-weight:600;margin:0 0 18px}
+.hero p{max-width:60ch;color:var(--text);font-size:1.05rem;margin:0 0 14px}
+.btns{display:flex;flex-wrap:wrap;gap:14px;margin:26px 0}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#111;font-weight:800;text-decoration:none;padding:14px 22px;border-radius:10px}
+.btn:hover,.btn:focus-visible{background:#ffd54f;outline:2px solid #fff}
+.photo{width:min(78%,340px);aspect-ratio:3/4;background:#000;border:3px solid var(--accent);overflow:hidden;border-radius:50% 50% 0 0/38% 38% 0 0;display:flex;align-items:center;justify-content:center;color:#888;font-weight:800;font-size:4rem;margin-top:10px}
+h2{font-size:2rem;margin:0 0 18px;border-left:5px solid var(--accent);padding-left:12px}
+[hidden]{display:none!important}
+.page{text-align:center;min-height:70vh}
+.page h2{border:0;padding:0;font-size:clamp(2.2rem,10vw,3.6rem);margin-bottom:26px}
+.page p{max-width:62ch;margin:0 auto;color:var(--text);font-size:1.15rem;line-height:1.9}
+.page .chips{justify-content:center;margin:24px 0 30px}
+.page .grid{margin-top:36px;text-align:left}
+.page .card p{font-size:1rem;line-height:1.6;color:var(--muted)}
+.page .line{font-weight:800;font-size:1.2rem;margin:18px auto}
+.page .line a{color:var(--text);text-decoration:none}
+.contact .btn{display:flex;width:min(100%,300px);margin:16px auto 0;justify-content:center;font-weight:400}
+.btn.li{background:#0a66c2;color:#fff}.btn.gh{background:#24292e;color:#fff}
+.btn.li:hover,.btn.gh:hover{filter:brightness(1.2)}
+.note{color:var(--muted)!important;font-size:.95rem!important;margin-top:14px!important}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.chips span{border:1.5px solid var(--accent);color:var(--accent);padding:6px 14px;border-radius:999px;font-weight:600;font-size:.95rem}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--panel);border-radius:14px;padding:22px;border-top:4px solid var(--accent)}
+.card h3{margin:0 0 8px}
+.card p{margin:0 0 14px;color:var(--muted)}
+.card a{color:var(--accent);font-weight:700}
+.contact ul{list-style:none;padding:0;margin:0 0 20px;display:grid;gap:10px}
+.contact a{color:var(--accent);font-weight:600}
+footer{position:relative;z-index:1;text-align:center;color:#888;padding:28px 20px;font-size:.9rem}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+@media (min-width:760px){.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:end}.photo{margin:0 0 0 auto}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">My Portfolio</div>
+  <nav><a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+  <section id="home" class="hero">
+    <div>
+      <h1>Hi, I'm Govardhan 👋</h1>
+      <p class="role">4th Year Computer Science Student | Java, Web &amp; Python</p>
+      <p>I'm Lingayath Govardhan Goud. I enjoy building practical projects with maps, data and pathfinding, and I keep improving my skills with every project.</p>
+      <p>Let's create something amazing together! 🚀</p>
+      <div class="btns">
+        <a class="btn" href="#about">👤 About Me</a>
+        <a class="btn" href="#projects">📁 My Projects</a>
+        <a class="btn" href="#contact">✉️ Contact Me</a>
+      </div>
+    </div>
+    <div class="photo"><img src="photo.jpg" alt="Govardhan Goud"></div>
+  </section>
+
+  <section id="about" class="page about" hidden>
+    <h2>👤 About Me</h2>
+    <p>💻 I am a 4th-year B.Tech Computer Science student at St. John’s College of Engineering and Technology. I enjoy building practical projects with maps, data and pathfinding using Java, C, Python, HTML, CSS and JavaScript. I am passionate about creating digital solutions that combine creativity and technology to improve user experiences.</p>
+    <div class="chips"><span>Java</span><span>C</span><span>Python</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+    <a id="resume" class="btn" href="resume.pdf" download="Govardhan_Goud_Resume.pdf">⬇️ Download Resume</a>
+      </section>
+
+  <section id="projects" class="page" hidden>
+    <h2>My Projects</h2>
+    <p>🚀 Explore my projects on GitHub, where I work on user-friendly applications using Java, Python, HTML, CSS and JavaScript. These projects reflect my learning journey, problem-solving skills, and interest in building real-world solutions.</p>
+    <a class="btn" href="https://github.com/GovardhanGoud7?tab=repositories" target="_blank" rel="noopener">🐙 View My GitHub Projects</a>
+    <div class="grid">
+      <div class="card"><h3>Tourist Map</h3><p>An interactive map that helps visitors find and explore tourist places.</p></div>
+      <div class="card"><h3>Disaster Watch</h3><p>A tool that keeps people informed about disasters and alerts.</p></div>
+      <div class="card"><h3>Campus Navigation Pathfinding</h3><p>Finds the best route between places on a campus using pathfinding.</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="page contact" hidden>
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out to me for collaboration, internship opportunities, or any queries.</p>
+    <p class="line">✉️ Email: <a href="mailto:govardhangovgov@gmail.com">govardhangovgov@gmail.com</a></p>
+    <p class="line">📞 Phone: <a href="tel:+919391879413">+91 9391879413</a></p>
+    <a class="btn li" href="https://www.linkedin.com/in/l-govardhan-goud-4255a2354" target="_blank" rel="noopener">in&nbsp; Connect on LinkedIn</a>
+    <a class="btn gh" href="https://github.com/GovardhanGoud7" target="_blank" rel="noopener">🐙 View My GitHub</a>
+  </section>
+</main>
+<footer>© 2026 Lingayath Govardhan Goud</footer>
+<script>
+var views=["home","about","projects","contact"];
+function route(){
+  var h=location.hash.replace("#","");if(views.indexOf(h)<0)h="home";
+  views.forEach(function(id){document.getElementById(id).hidden=(id!==h);});
+  window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",route);route();
+</script>
+</body>
+</html>
